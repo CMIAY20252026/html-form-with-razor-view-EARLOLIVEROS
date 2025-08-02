@@ -1,9 +1,74 @@
 @{
-    ViewData["Title"] = "Student Form";
+    ViewData["Title"] = "STUDENT FORM"; 
 }
 
-<h2>Student Information Form</h2>
+<div class="text-center">
+    <h1 class="display-4">Student Information Form</h1>
 
-<form method="post">
-    <!-- Students will complete the form here -->
-</form>
+    <form>
+        <legend>Please Input Details</legend>
+        <input type="text" id="fullname" placeholder="Fullname" />
+        <input type="text" name="lastname" placeholder="LastName" />
+        <input type="text" name="email" placeholder="Email" />
+        <input type="text" name="studentNumber" placeholder="Student Number" />
+    </form>
+    <fieldset>
+        <legend>Select Gender</legend>
+
+        <label>
+            <input type="radio" name="gender" value="Male" />
+            Male
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="Female" />
+            Female
+        </label>
+
+    </fieldset>
+    <label for="yearLevel">Year Level</label>
+    <select id="yearLevel" name="yearLevel">
+        <option value="" disabled selected>Select year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+    </select>
+    
+    <label for="course">Course</label>
+    <select id="course" name="course">
+        <option value="" disabled selected>Select course</option>
+        <option value="BSCS">BSCS (Bachelor of Science in Computer Science)</option>
+        <option value="BSIT">BSIT (Bachelor of Science in Information Technology)</option>
+        <option value="BSEMC">BSEMC (Bachelor of Science in Entertainment & Multimedia Computing)</option>
+    </select>
+ 
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            margin: 0 auto; /* centers the whole table */
+        }
+
+        th, td {
+            text-align: center; /* centers the text inside each cell */
+            padding: 4px 8px;
+        }
+    </style>
+
+    <br>
+    <br />
+
+    <textarea id="w3review" name="w3review" rows="4" cols="50">
+        Hello! I'm Earl John,its nice meeting you. Im a Third year BSCS Student, currently working on Apps Dev 
+    </textarea>
+    <br/>
+    <br/>
+
+    <button type="submit">Submit</button>
+
+</div>
